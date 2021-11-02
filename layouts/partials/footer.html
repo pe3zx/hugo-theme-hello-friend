@@ -2,15 +2,13 @@
   <div class="footer__inner">
     {{ if $.Site.Copyright }}
       <div class="copyright copyright--user">{{ $.Site.Copyright | safeHTML }}</div>
+      <span>
+        <a href="https://webring.wonderful.software#pandora.sh" title="วงแหวนเว็บ" target="_blank" rel="noopener">
+          <img src="/img/webring.svg" width="20px" height="20px" alt="วงแหวนเว็บ" />
+        </a>
+      </span>
       {{ else }}
       {{ partial "logo.html" . }}
-      <div class="copyright">
-          <span>
-              <a href="https://webring.wonderful.software#pandora.sh" title="วงแหวนเว็บ" target="_blank" rel="noopener">
-                <img src="/img/webring.svg" width="20px" height="20px" alt="วงแหวนเว็บ" />
-              </a>
-          </span>
-      </div>
     {{ end }}
   </div>
 </footer>
